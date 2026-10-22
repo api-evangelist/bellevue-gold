@@ -1,23 +1,96 @@
 aid: bellevue-gold
+
 name: Bellevue Gold
-description: 'Bellevue Gold is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bellevue Gold Limited (ASX: BGL) is an Australian gold producer that 100% owns and operates the high-grade Bellevue Gold Project, located about 40km northwest of Leinster in the Eastern Goldfields
+  of Western Australia. The project hosts an Indicated and Inferred Mineral Resource of 2.7Moz at 8.6g/t gold and a Probable Ore Reserve of 1.0Moz, and is powered by a renewable-energy-led power station.
+  The company''s public web presence (bellevuegold.com.au) covers corporate, investor, sustainability and media information; no public developer API, documentation or developer portal was found.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bellevue-gold/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Gold Mining
+- Mining
+- Australia
+- ASX Listed
+- Western Australia
+- Natural Resources
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://bellevuegold.com.au/wp-content/uploads/2023/05/logo.png
+
 common:
+- type: WellKnown
+  url: well-known/bellevue-gold-well-known.yml
+- type: Hosts
+  url: hosts/bellevue-gold-hosts.yml
+- type: DomainSecurity
+  url: security/bellevue-gold-domain-security.yml
 - type: Website
   url: https://bellevuegold.com.au/
+- type: About
+  url: https://bellevuegold.com.au/company/
+- type: InvestorRelations
+  url: https://bellevuegold.com.au/investor-centre/
+- type: Newsroom
+  url: https://bellevuegold.com.au/media/
+- type: Sustainability
+  url: https://bellevuegold.com.au/sustainability/
+- type: Support
+  url: https://bellevuegold.com.au/contact/
+- type: PrivacyPolicy
+  url: https://bellevuegold.com.au/wp-content/uploads/2026/08/Privacy-Policy-1.pdf
+- type: Disclaimer
+  url: https://bellevuegold.com.au/disclaimer/
+- type: Careers
+  url: https://bellevuegold.elmotalent.com.au/careers/careers/jobs
+- type: LinkedIn
+  url: https://www.linkedin.com/company/bellevuegold/
+- type: X
+  url: https://twitter.com/BellevueGold
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Identity verified from bellevuegold.com.au (title "Bellevue Gold | ASX:BGL", company page names Bellevue Gold Limited). No developer portal, docs or API surface published; preflight contract discovery
+    found none.
+  evidence:
+  - url: https://bellevuegold.com.au/
+    status: 200
+  - url: https://bellevuegold.com.au/company/
+    status: 200
+  - url: https://bellevuegold.com.au/contact/
+    status: 200
+  - url: https://bellevuegold.com.au/investor-centre/
+    status: 200
+  - url: https://bellevuegold.com.au/media/
+    status: 200
+  - url: https://bellevuegold.com.au/wp-content/uploads/2026/08/Privacy-Policy-1.pdf
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 12
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

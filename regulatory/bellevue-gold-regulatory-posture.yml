@@ -1,0 +1,59 @@
+generated: '2026-10-21'
+method: searched
+source: https://bellevuegold.com.au/wp-content/uploads/2026/08/Privacy-Policy-1.pdf
+signals:
+  data_subject_request:
+    url: https://bellevuegold.com.au/wp-content/uploads/2026/08/Privacy-Policy-1.pdf
+    section: 'Accessing and correcting your Personal Information'
+    channel: Privacy Officer
+    stated_sla: 'within a reasonable time'
+    rights_named: [access, correction]
+    escalation: Office of the Australian Information Commissioner, after internal complaint handling (Privacy Officer, then Chief Financial Officer, 30 days each)
+    evidence:
+    - source: https://bellevuegold.com.au/wp-content/uploads/2026/08/Privacy-Policy-1.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        You may contact our Privacy Officer to request access to the Personal Information that we hold
+        about you and/or to correct any inaccurate or out of date information, at any time.
+    - source: https://bellevuegold.com.au/wp-content/uploads/2026/08/Privacy-Policy-1.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We will respond to all requests for access to or correction of Personal Information within a
+        reasonable time.
+    note: >-
+      Australian Privacy Act access and correction rights only; no deletion or portability right is named.
+      The policy reserves the right to recover reasonable access costs and to refuse corrections it does
+      not agree with, with written reasons.
+  data_residency:
+    url: https://bellevuegold.com.au/wp-content/uploads/2026/08/Privacy-Policy-1.pdf
+    section: '10 Overseas transfers of Personal Information'
+    evidence:
+    - source: https://bellevuegold.com.au/wp-content/uploads/2026/08/Privacy-Policy-1.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        As at the date of this policy, we are not likely to disclose your Personal Information to overseas
+        recipients.
+    - source: https://bellevuegold.com.au/wp-content/uploads/2026/08/Privacy-Policy-1.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        If in future we do propose to disclose Personal Information overseas, we will do so in compliance
+        with the requirements of the Privacy Act.
+    note: >-
+      A statement that cross-border disclosure is not expected, not a contractual residency commitment;
+      the same policy says records may be held in cloud storage and on third party servers without naming
+      their location.
+  data_retention:
+    url: https://bellevuegold.com.au/wp-content/uploads/2026/08/Privacy-Policy-1.pdf
+    section: 'Protection of Personal Information'
+    evidence:
+    - source: https://bellevuegold.com.au/wp-content/uploads/2026/08/Privacy-Policy-1.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We will destroy or de-identify Personal Information once it is no longer needed for a valid purpose
+        or required to be kept by law.
+    note: Purpose-limited retention principle; no retention periods are stated.

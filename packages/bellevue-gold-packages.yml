@@ -1,0 +1,9 @@
+generated: '2026-10-21'
+method: none
+note: Checked npm (registry.npmjs.org/bellevue-gold 404; search "bellevuegold" 0 results), PyPI (pypi.org/pypi/bellevue-gold/json 404) and GitHub repository search ("bellevuegold" 0 results). Bellevue Gold is a gold mining company with no public API or developer portal; no first-party packages found.
+checked:
+- https://registry.npmjs.org/bellevue-gold
+- https://registry.npmjs.org/-/v1/search?text=bellevuegold
+- https://pypi.org/pypi/bellevue-gold/json
+- https://api.github.com/search/repositories?q=bellevuegold
+packages: []
